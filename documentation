@@ -1,0 +1,181 @@
+ Project Overview
+A modern Flutter mobile application for credit monitoring with beautiful authentication screens and smooth user experience.
+
+- Features
+Splash Screen with scale and fade animations
+Login Screen with email/password validation
+Signup Screen with comprehensive form validation
+Responsive Design for all screen sizes
+Success Bottom Sheets for user feedback
+Modern UI with background images and smooth transitions
+- project Structure
+
+lib/
+├── main.dart
+├── Auth
+    ├── components/         # Reusable components for authentication screens
+    │── pages
+        ├── splash_screen.dart     # Animated splash screen
+        ├── login_screen.dart      # Login with validation
+        └── signup_screen.dart     # Signup with confirmation
+
+ --Design Specifications
+ Primary Color: #1E3A8A (Blue)
+ Background: White
+ Text: Black87 & Grey
+ Success: Green
+
+
+ --Typography
+ Font Family: Inter
+ Headers: 32px Bold
+ Body: 16px Regular
+ Labels: 14px Medium
+
+--Prerequisites
+ Flutter SDK 3.0+
+ Android Studio
+ Android Emulator or Device
+
+ --Installation
+ Implementation Details
+ Splash Screen
+ Duration: 3 seconds
+
+ --Animations: Scale + Fade
+
+ --Navigation: Auto-redirect to Login
+
+-- Login Screen
+ Fields:
+ Email (with format validation)
+ Password (min 6 characters, letters & numbers)
+ Forgot Password link
+
+ Validation Rules:
+ Email must be valid format
+ Password required, min 6 chars
+ Real-time validation feedback
+
+ --Signup Screen
+ Fields:
+
+ Full Name (required)
+ Email (valid format)
+ Password (min 6 chars, letters & numbers)
+ Confirm Password (must match)
+ Validation Rules:
+ All fields required
+ Email must be valid
+ Password strength enforced
+ Password match verification
+
+---Testing
+ Test Checklist
+ Splash animation works
+ Login form validation
+ Signup form validation
+ Navigation between screens
+ Success bottom sheets
+ Responsive design
+ Keyboard handling
+ Loading states
+
+ Run Tests
+ bash
+ # Run on Android emulator
+ flutter run
+
+ # Test on device
+ flutter run -d <device_id>
+
+
+ - Screens Overview
+ 1. Splash Screen
+ App logo & name
+
+ Animated entrance
+
+ Brand message: "Monitor & Improve Your Credit"
+
+ 2. Login Screen
+ Background image with overlay
+
+ Email & password fields
+
+ Forgot password link
+
+ Signup navigation
+
+ Form validation
+
+ 3. Signup Screen
+ Background image with overlay
+
+ Full registration form
+
+ Password confirmation
+
+ Back to login navigation
+
+ Comprehensive validation
+
+ --------User Flows--------
+ Successful Login Flow
+ Splash Screen (3 sec)
+
+ Login Screen → Enter credentials
+
+ Validation passed → Show loading
+
+ Success bottom sheet → Continue to app
+
+ Successful Signup Flow
+ Splash Screen → Login Screen
+
+ Tap "Sign Up" → Signup Screen
+
+ Fill form → Validation passed
+
+ Success bottom sheet → Redirect to login
+
+ State Management
+ Local state using setState()
+
+ Form validation with GlobalKey<FormState>
+
+ Loading states with _isLoading boolean
+
+ Password visibility toggles
+
+Responsive Design
+ Flexible padding and margins
+
+ Adaptive font sizes
+
+ Scrollable content for small screens
+
+ Keyboard-aware layouts
+
+ Performance Features
+ Optimized animations
+
+ Efficient widget rebuilding
+
+ Proper disposal of controllers
+
+ Memory leak prevention
+
+ Support
+ For issues during implementation:
+
+ Check Flutter version compatibility
+
+ Verify font files are properly linked
+
+ Ensure Android emulator is running
+
+ Check console for specific error messages
+
+ Delivery: Complete Flutter source code with all screens implemented and tested on Android.
+
