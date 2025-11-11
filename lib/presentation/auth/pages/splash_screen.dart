@@ -90,7 +90,7 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
                 const SizedBox(height: 20),
                 const Text(
-                  'Credit Monitor',
+                  'Assignment Task',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 28,
@@ -100,7 +100,7 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Monitor & Improve Your Credit',
+                  'Authentication App Using Flutter',
                   style: TextStyle(
                     color: Colors.white70,
                     fontSize: 16,

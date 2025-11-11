@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/LoadingButton.dart';
 import 'login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -164,7 +165,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      'Create your account to monitor and improve your credit',
+                      'Create your account to get started',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white70,
@@ -285,36 +286,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             },
                           ),
                           const SizedBox(height: 30),
-                          SizedBox(
-                            width: double.infinity,
-                            child: ElevatedButton(
-                              onPressed: _isLoading ? null : _signUp,
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF1E3A8A),
-                                padding: const EdgeInsets.symmetric(vertical: 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                              ),
-                              child: _isLoading
-                                  ? const SizedBox(
-                                width: 20,
-                                height: 20,
-                                child: CircularProgressIndicator(
-                                  strokeWidth: 2,
-                                  valueColor: AlwaysStoppedAnimation<Color>(
-                                    Colors.white,
-                                  ),
-                                ),
-                              )
-                                  : const Text(
-                                'Create Account',
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ),
+                          LoadingButton(
+                            isLoading: _isLoading,
+                            onPressed: _signUp,
+                            text: 'Create Account',
                           ),
                           const SizedBox(height: 20),
                           Row(
