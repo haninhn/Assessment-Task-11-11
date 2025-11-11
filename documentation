@@ -8,8 +8,9 @@ Signup Screen with comprehensive form validation
 Responsive Design for all screen sizes
 Success Bottom Sheets for user feedback
 Modern UI with background images and smooth transitions
-- project Structure
 
+- project Structure
+ i shoose clean architecture for better maintainability and scalability. Here is the proposed structure:
 lib/
 ├── main.dart
 ├── Auth
@@ -93,48 +94,32 @@ lib/
  - Screens Overview
  1. Splash Screen
  App logo & name
-
  Animated entrance
-
- Brand message: "Monitor & Improve Your Credit"
 
  2. Login Screen
  Background image with overlay
-
  Email & password fields
-
  Forgot password link
-
  Signup navigation
-
  Form validation
 
  3. Signup Screen
  Background image with overlay
-
  Full registration form
-
  Password confirmation
-
  Back to login navigation
-
  Comprehensive validation
 
  --------User Flows--------
  Successful Login Flow
  Splash Screen (3 sec)
-
  Login Screen → Enter credentials
-
  Validation passed → Show loading
-
  Success bottom sheet → Continue to app
 
  Successful Signup Flow
  Splash Screen → Login Screen
-
  Tap "Sign Up" → Signup Screen
-
  Fill form → Validation passed
 
  Success bottom sheet → Redirect to login
@@ -150,32 +135,21 @@ lib/
 
 Responsive Design
  Flexible padding and margins
-
  Adaptive font sizes
-
  Scrollable content for small screens
-
  Keyboard-aware layouts
 
- Performance Features
+--- Performance Features
  Optimized animations
-
  Efficient widget rebuilding
-
  Proper disposal of controllers
-
  Memory leak prevention
 
  Support
- For issues during implementation:
-
+ ---For issues during implementation:
  Check Flutter version compatibility
-
  Verify font files are properly linked
-
  Ensure Android emulator is running
-
  Check console for specific error messages
-
  Delivery: Complete Flutter source code with all screens implemented and tested on Android.
 
